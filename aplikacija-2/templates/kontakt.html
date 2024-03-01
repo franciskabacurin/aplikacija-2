@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> Kontakt </h1>
+
+<p> Za sva pitanja javite se putem kontakt forme.</p>
+
+<h3> Kontakt forma </h3>
+<div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+  <br>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+  <br>
+      <label for="country">Country</label> <br>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <br>
+  <br>
+      <label for="subject">Subject</label> 
+   <br>   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  <br>
+      <input type="submit" value="Submit"> <br>
+    </form>
+  </div>
+
+{% endblock content %}
